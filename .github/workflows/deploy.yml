@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://jason1792.github.io/chief-pdx-give-get/
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
