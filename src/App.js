@@ -223,13 +223,6 @@ useEffect(() => {
 
 
 
-  const asText = (v) => {
-    if (v == null) return "";
-    if (typeof v === "string") return v.trim();
-    if (v instanceof Date) return v.toLocaleDateString();
-    return String(v).trim();
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input === funtime) {
