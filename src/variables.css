@@ -32,8 +32,8 @@ button:active, .button:active {
         --funtime-input-bg: rgba(0,0,0,.25);
 
         --button-bg: rgba(var(--chief-pdx-1-alpha),.5);
-        --button-bg-hover: rgba(var(--chief-pdx-5-alpha),.25);
-        --button-bg-active: rgba(var(--chief-pdx-5-alpha),.55);
+        --button-bg-hover: rgba(var(--chief-pdx-4-alpha),.35);
+        --button-bg-active: rgba(var(--chief-pdx-4-alpha),.65);
         --button-text: rgba(255,255,255,.5);        
         --button-text-hover: rgba(255,255,255,.75);        
         --button-text-active: rgba(255,255,255,1);        
@@ -66,15 +66,15 @@ button:active, .button:active {
                 rgba(var(--chief-pdx-1-alpha),.08)), 
                 rgb(50, 50, 50);
         --card-give-bg:                 
-                linear-gradient(
-                rgba(var(--chief-pdx-4-alpha),.08),
-                rgba(var(--chief-pdx-4-alpha),.08)), 
-                rgb(50, 50, 50);
+                linear-gradient(35deg, 
+                rgba(var(--chief-pdx-2-alpha),.3),
+                rgba(var(--chief-pdx-2-alpha),.7)), 
+                rgb(0, 0, 0);
         --card-get-bg:
-                linear-gradient(
-                rgba(var(--chief-pdx-3-alpha),.1),
-                rgba(var(--chief-pdx-3-alpha),.1)), 
-                rgb(50, 50, 50);
+                linear-gradient(35deg, 
+                rgba(var(--chief-pdx-3-alpha),.3),
+                rgba(var(--chief-pdx-3-alpha),.6)), 
+                rgb(0, 0, 0);
         --card-text-bg: none;
         --logo-button-bg: none;
         --logo-button-bg-hover: 
@@ -189,10 +189,10 @@ button:active, .button:active {
         /* COPY THESE FROM .ASE ONLY */
         --chief-pdx-1: rgb(110,105,90);
         --chief-pdx-1-alpha: 110,105,90;
-        --chief-pdx-2: rgb(167, 39, 30);
-        --chief-pdx-2-alpha: 167, 39, 30;
-        --chief-pdx-3: rgb(71, 123, 54);
-        --chief-pdx-3-alpha: 71, 123, 54;
+        --chief-pdx-2: rgb(123, 28, 33);
+        --chief-pdx-2-alpha: 123, 28, 33;
+        --chief-pdx-3: rgb(101, 137, 9);
+        --chief-pdx-3-alpha: 101, 137, 9;
         --chief-pdx-4: rgb(200, 195, 42);
         --chief-pdx-4-alpha: 200, 195, 42;
         --chief-pdx-5: rgb(38, 139, 207);
