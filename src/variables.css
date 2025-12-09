@@ -24,14 +24,14 @@ button:active, .button:active {
 
 /* #region COLORS */      
 :root, :root[data-theme='actual'] {
-        --splash-bg: none;
+        --splash-bg: url(assets/chief_pdx_gg_splash.jpg);
         --logo-carousel-wrapper-bg: none;
         --logo-carousel-image-bg: none;
         --funtime-all-bg: none;
-        --funtime-input-bg: var(--menu-modal-search-input-bg);
-        --input-and-button-bg: none;
+        --funtime-input-and-button-bg: none;
+        --funtime-input-bg: rgba(0,0,0,.25);
 
-        --button-bg: rgba(var(--chief-pdx-1-alpha),.15);
+        --button-bg: rgba(var(--chief-pdx-1-alpha),.5);
         --button-bg-hover: rgba(var(--chief-pdx-5-alpha),.25);
         --button-bg-active: rgba(var(--chief-pdx-5-alpha),.55);
         --button-text: rgba(255,255,255,.5);        
@@ -62,13 +62,13 @@ button:active, .button:active {
 
         --card-bg: 
                 linear-gradient(
-                rgba(var(--chief-pdx-1-alpha),.1),
-                rgba(var(--chief-pdx-1-alpha),.1)), 
+                rgba(var(--chief-pdx-1-alpha),.08),
+                rgba(var(--chief-pdx-1-alpha),.08)), 
                 rgb(50, 50, 50);
         --card-give-bg:                 
                 linear-gradient(
-                rgba(var(--chief-pdx-4-alpha),.1),
-                rgba(var(--chief-pdx-4-alpha),.1)), 
+                rgba(var(--chief-pdx-4-alpha),.08),
+                rgba(var(--chief-pdx-4-alpha),.08)), 
                 rgb(50, 50, 50);
         --card-get-bg:
                 linear-gradient(
@@ -118,7 +118,7 @@ button:active, .button:active {
         --logo-carousel-image-bg: rgb(99, 136, 94);
         --funtime-all-bg: rgb(138, 117, 89);
         --funtime-input-bg: rgb(189, 227, 177);
-        --input-and-button-bg: hotpink;
+        --funtime-input-and-button-bg: hotpink;
 
 
         --button-bg: rgba(255,200,9,1);
@@ -265,11 +265,11 @@ h4 {
 
 /* #region BANNER_IMAGES */  
 :root {
-        --banner_position_master: calc(50% + 0px) calc(50% + 0px); 
+        --banner_position_master: calc(50% + 0px) calc(50% - 100px); 
         --banner_height_master: calc(var(--splash-max-width) * var(--crop-master));  
         --banner_height_master-tablet: calc(var(--splash-max-width-tablet) * var(--crop-master));  
         --banner_height_master-cell: calc(var(--splash-max-width-cell) * var(--crop-master));  
-        --crop-master: calc(.5625 * 1);
+        --crop-master: calc(.75 * 1);
         --splash-max-width: 600px;
         --splash-max-width-tablet: 90vw;
         --splash-max-width-cell: 90vw;

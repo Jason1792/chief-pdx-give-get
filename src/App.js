@@ -5,11 +5,11 @@ import CardGet from "./CardGet";
 import ImageModal from "./ImageModal";
 import { useEffect, useState } from "react";
 
- const BANNERS = [
-   "chief_pdx"
-];
+// const BANNERS = [
+//   "chief_pdx"
+//];
 
-const funtime = "chief";
+const funtime = "Chief";
 const AUTH_KEY = "cpgg-authed"; // name in localStorage
 
 function App() {
@@ -17,17 +17,17 @@ function App() {
   const [authed, setAuthed] = useState(false);
   const [input, setInput] = useState("");
 
-     const [banner, setBanner] = useState(() => {
-     const saved =
-       typeof window !== "undefined" &&
-       window.localStorage &&
-       window.localStorage.getItem("theme-banner");
+//     const [banner, setBanner] = useState(() => {
+//     const saved =
+//       typeof window !== "undefined" &&
+//       window.localStorage &&
+//       window.localStorage.getItem("theme-banner");
 
-     const attr =
-       typeof document !== "undefined" &&
-       document.documentElement.getAttribute("data-theme-banner");
-     return saved || attr || BANNERS[0];
-   });
+//     const attr =
+//       typeof document !== "undefined" &&
+//       document.documentElement.getAttribute("data-theme-banner");
+//     return saved || attr || BANNERS[0];
+//   });
   
   // 👇 check localStorage once, when the app mounts
   useEffect(() => {
@@ -37,20 +37,20 @@ function App() {
     }
   }, []);
 
-   useEffect(() => {
-     if (typeof document !== "undefined") {
-       document.documentElement.setAttribute("data-theme-banner", banner);
-     }
-     if (typeof window !== "undefined" && window.localStorage) {
-       window.localStorage.setItem("theme-banner", banner);
-     }
-   }, [banner]);
+//   useEffect(() => {
+//     if (typeof document !== "undefined") {
+//       document.documentElement.setAttribute("data-theme-banner", banner);
+//     }
+//     if (typeof window !== "undefined" && window.localStorage) {
+//       window.localStorage.setItem("theme-banner", banner);
+//     }
+//   }, [banner]);
 
-   const advanceBanner = () => {
-     const idx = BANNERS.indexOf(banner);
-     const next = BANNERS[(idx + 1) % BANNERS.length];
-     setBanner(next);
-   };
+//   const advanceBanner = () => {
+//     const idx = BANNERS.indexOf(banner);
+//     const next = BANNERS[(idx + 1) % BANNERS.length];
+//     setBanner(next);
+//   };
 
   // 2. app hooks
   const [cardData, setCardData] = useState([]);
@@ -236,16 +236,9 @@ useEffect(() => {
   if (!authed) {
     return (
       <div className="splash">
-         <div className="logo-carousel-wrapper">
-                <button className="logo-carousel-image logo-carousel-button"
-                type="button"
-                onClick={advanceBanner}
-                aria-label="Next" 
-                title="Tap to change banner" />
-         </div>
          <div className="funtime-all"> 
         <h3>Password</h3>
-        <form className="input-and-button"
+        <form className="funtime-input-and-button"
         onSubmit={handleSubmit}>
           <input className="funtime-input"
             value={input}
