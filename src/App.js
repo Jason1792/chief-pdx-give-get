@@ -3,7 +3,6 @@ import Header from "./Header";
 import CardGive from "./CardGive";
 import CardGet from "./CardGet";
 import ImageModal from "./ImageModal";
-import logo from "./assets/logo_chief_pdx.png";
 import rose from "./assets/rose.png";
 import { useEffect, useState } from "react";
 
@@ -239,7 +238,6 @@ useEffect(() => {
     return (
       <div className="splash">
               <div className="logo-container">
-                <img src={logo} alt="Chief PDX Logo" /> 
               </div>
               <div className="hgg-container">
                 <h2>HOLIDAY GIVES & GETS</h2>
