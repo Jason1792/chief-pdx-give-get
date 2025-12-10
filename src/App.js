@@ -241,7 +241,8 @@ useEffect(() => {
               </div>
               <div className="hgg-container">
                 <h2>HOLIDAY GIVES & GETS</h2>
-                <h2>HOLIDAY GIVES <br />& GETS</h2>
+                <h2>HOLIDAY GIVES</h2>
+                <h2>& GETS</h2>
               </div>
          <div className="funtime-all"> 
         <h3>Password</h3>

@@ -102,30 +102,43 @@ html, body, #root {
         opacity: .85;
 }
 }
-.hgg-container :last-child {
-        display: none;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.hgg-container :last-child {
-        display: none;
-}
-}
-@media (max-width: 600px) {
-.hgg-container :last-child {
-        display: block;
-}
-}
-.hgg-container :first-child {
+.hgg-container h2:nth-child(1) {
         display: block;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.hgg-container :first-child {
+.hgg-container h2:nth-child(1) {
         display: block;
 }
 }
 @media (max-width: 600px) {
-.hgg-container :first-child {
+.hgg-container h2:nth-child(1) {
         display: none;
+}
+}
+.hgg-container h2:nth-child(2) {
+        display: none;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.hgg-container h2:nth-child(2) {
+        display: none;
+}
+}
+@media (max-width: 600px) {
+.hgg-container h2:nth-child(2) {
+        display: block;
+}
+}
+.hgg-container h2:nth-child(3) {
+        display: none;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.hgg-container h2:nth-child(3) {
+        display: none;
+}
+}
+@media (max-width: 600px) {
+.hgg-container h2:nth-child(3) {
+        display: block;
 }
 }
 .funtime-all {
@@ -147,6 +160,7 @@ html, body, #root {
 .funtime-all {
         opacity: 1;
         margin: 55px auto;
+        width: 270px;
         max-width: 90vw;
 }
 }
@@ -259,7 +273,8 @@ html, body, #root {
 main {
         background: var(--main-bg);
         flex: 1;
-        width: 1200px;
+        max-width: 1200px;
+        width: 100%;              
         margin: 0 auto;
         padding: 8px;
         box-sizing: border-box;
@@ -307,7 +322,7 @@ body.menu-open main {
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .card-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 }
 }
 @media (max-width: 600px) {
@@ -315,9 +330,8 @@ body.menu-open main {
         grid-template-columns: repeat(1, 1fr);
 }
 }
-
-/* Wrapper for GIVE (left) and GET (right) columns */
 .give-get-wrapper {
+        opacity: 1;
         display: flex;
         gap: 8px;
         align-items: flex-start;
@@ -325,15 +339,31 @@ body.menu-open main {
         box-sizing: border-box;
         margin-top: 16px;
 }
-
-/* Each column */
-.give-column,
-.get-column {
+@media (min-width: 601px) and (max-width: 1024px) {
+.give-get-wrapper {
+        opacity: 1;
+}
+}@media (max-width: 600px) {
+.give-get-wrapper {
+        opacity: 1;
+        flex-direction: column;
+}
+}
+.give-column, .get-column {
         flex: 1;
         min-width: 0;
 }
-
-/* Titles above each column */
+@media (min-width: 601px) and (max-width: 1024px) {
+.give-column, .get-column {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.give-column, .get-column {
+        opacity: 1;
+        width: 100%;
+}
+}
 .column-title {
         opacity: .75;
         margin: -12px 0 11px 0;
@@ -341,9 +371,3 @@ body.menu-open main {
         font-weight: 300;
 }
 
-/* Stack columns on small screens */
-@media (max-width: 800px) {
-.give-get-wrapper {
-        flex-direction: column;
-}
-}

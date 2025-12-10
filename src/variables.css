@@ -66,14 +66,14 @@ button:active, .button:active {
                 rgb(50, 50, 50);
         --card-give-bg:                 
                 linear-gradient(35deg, 
-                rgba(var(--chief-pdx-2-alpha),.3),
-                rgba(var(--chief-pdx-2-alpha),.7)), 
-                rgb(0, 0, 0);
+                rgba(var(--chief-pdx-2-alpha),.2),
+                rgba(var(--chief-pdx-2-alpha),.5)), 
+                rgb(15, 15, 15);
         --card-get-bg:
                 linear-gradient(35deg, 
-                rgba(var(--chief-pdx-3-alpha),.3),
-                rgba(var(--chief-pdx-3-alpha),.6)), 
-                rgb(0, 0, 0);
+                rgba(var(--chief-pdx-3-alpha),.2),
+                rgba(var(--chief-pdx-3-alpha),.5)), 
+                rgb(17, 17, 17);
         --card-text-bg: none;
         --logo-button-bg: none;
         --logo-button-bg-hover: 
