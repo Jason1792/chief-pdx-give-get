@@ -11,7 +11,6 @@
         text-decoration: none;
         color: inherit;
 }
-
 .card:has(.give) {
   background: var(--card-give-bg);
 }

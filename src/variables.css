@@ -24,7 +24,6 @@ button:active, .button:active {
 
 /* #region COLORS */      
 :root, :root[data-theme='actual'] {
-        --splash-bg: url(assets/chief_pdx_gg_splash.jpg);
         --logo-carousel-wrapper-bg: none;
         --logo-carousel-image-bg: none;
         --funtime-all-bg: none;

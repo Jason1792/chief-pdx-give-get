@@ -10,12 +10,12 @@ html, body, #root {
         min-height: 100vh;
 }
 .splash {
-        background: var(--splash-bg);
+        background: url(assets/chief_pdx_gg_splash.jpg);
         background-size: cover; 
         background-position: center top;
         background-repeat: no-repeat;
-        max-width: var(--splash-max-width);
-        height: var(--splash-max-width);
+        width: 600px;
+        height: 600px;
         margin: 20px auto;
         padding: 0;
         border: 1px solid rgb(104, 104, 104);
@@ -25,8 +25,8 @@ html, body, #root {
 @media (min-width: 601px) and (max-width: 1024px) {
 .splash {
         opacity: 1;
-        max-width: var(--splash-max-width-tablet);
-        height: var(--splash-max-width-tablet);
+        width: 100vw;
+        height: 100vh;
         margin: 0px auto;
         border: 0;
         border-radius: 0;
@@ -35,42 +35,101 @@ html, body, #root {
 @media (max-width: 600px) {
 .splash {
         opacity: 1;
-        max-width: var(--splash-max-width-cell);
-        height: var(--splash-max-width-cell);
+        width: 100vw;
+        height: 100vh;
         margin: 0px auto;
         border: 0;
         border-radius: 0;
 }
 }
-:root {
-        --splash-logo-container-width: 270px;
-        --splash-HGG-container-width: 500px;
-        --splash-rose-container-width: 230px;
-}
 .logo-container {
-        opacity: .5;
-        margin: -7px auto;
-        width: var(--splash-logo-container-width);
+        opacity: .6;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+        width: 270px;
 }
 .logo-container img {
-        width: var(--splash-logo-container-width);
+        opacity: 1;
+        width: 100%;
 }
-.holiday-give-get-container {
+@media (min-width: 601px) and (max-width: 1024px) {
+.logo-container {
+        opacity: .6;
+        margin: 0 auto;
+}
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.logo-container img {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.logo-container {
+        opacity: .6;
+}
+}
+@media (max-width: 600px) {
+.logo-container img {
+        opacity: 1;
+}
+}
+.hgg-container {
         opacity: .75;
         margin: -20px auto;
-        width: var(--splash-HGG-container-width);
+        width: auto;
 }
-.holiday-give-get-container img {
-        width: var(--splash-HGG-container-width);
-}
-.rose-container {
+@media (min-width: 601px) and (max-width: 1024px) {
+.hgg-container {
         opacity: 1;
-        margin: -36px 25%;
-        width: var(--splash-rose-container-width);
+        margin: -10px auto;
 }
-.rose-container img {
-        width: var(--splash-rose-container-width);
-        rotate: 32deg;
+}
+@media (max-width: 600px) {
+.hgg-container {
+        opacity: 1;
+        margin: -10px auto;
+}
+}
+.hgg-container h2 {
+        opacity: .85;
+        font-family: "Pompiere";
+        text-align: center;
+        font-size: 3.3rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.hgg-container h2 {
+        opacity: .85;
+}
+}
+@media (max-width: 600px) {
+.hgg-container h2 {
+        opacity: .85;
+}
+}
+.funtime-all {
+        background: var(--funtime-all-bg);
+        border: none;
+        width: 402px;
+        margin: 45px auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.funtime-all {
+        opacity: 1;
+        margin: 65px auto;
+}
+}
+@media (max-width: 600px) {
+.funtime-all {
+        opacity: 1;
+        margin: 65px auto;
+        max-width: 90vw;
+}
 }
 .splash h3 {
         opacity: .85;
@@ -86,29 +145,6 @@ html, body, #root {
 @media (max-width: 600px) {
 .splash h3 {
         opacity: 1;
-}
-}
-
-.funtime-all {
-        background: var(--funtime-all-bg);
-        border: none;
-        width: 83%;
-        margin: auto;
-        padding: 40px 0;
-        box-sizing: border-box;
-        font-size: 16px;
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-.funtime-all {
-        opacity: 1;
-        width: 70%;
-}
-}
-@media (max-width: 600px) {
-.funtime-all {
-        opacity: 1;
-        width: 100%;
 }
 }
 .funtime-input-and-button {
@@ -166,6 +202,35 @@ html, body, #root {
 .funtime-button.visible {
         display: inline-block;
         pointer-events: auto;
+}
+.rose-container {
+        opacity: 1;
+        margin: -35px calc(50% - 150px);
+        width: 230px;
+}
+.rose-container img {
+        width: 230px;
+        rotate: 45deg;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.rose-container {
+        opacity: 1;
+}
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.rose-container img {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.rose-container {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.rose-container img {
+        opacity: 1;
+}
 }
 .menu-modal-input-reset:has(.funtime-button.hidden) {
   grid-template-columns: 1fr; 
