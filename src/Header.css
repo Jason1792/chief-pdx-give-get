@@ -34,7 +34,7 @@
         padding: 0 0 0 7px;
 }
 .logo-button {
-        opacity: .5;
+        opacity: .25;
         background: var(--logo-button-bg);
         border: none;
         padding: 0;

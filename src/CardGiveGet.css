@@ -20,6 +20,12 @@
   background: var(--card-get-bg);
 }
 
+.give-get-field-01, 
+.give-get-field-02, 
+.give-get-field-03, 
+.give-get-field-04 {
+        opacity: .7; 
+}
 .give-get-field-01 {
         font-size: 1.2rem;
         margin-top: 0;    
