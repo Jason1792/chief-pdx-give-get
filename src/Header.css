@@ -42,7 +42,7 @@
         transition: opacity .4s ease;
 }
 .logo-button:hover {
-        opacity: 1;
+        opacity: .65;
         background: none !important;
         filter: saturate(100%);
 }
